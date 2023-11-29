@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crie seu evento</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 class="title-bold">Crie e compartilhe<br> seu evento.</h1>
+    <p class="headerDescription">O primeiro passo, é preencher esse<br> formulário de inscrição.</p>
+  </header>
+  <main>
+    <form class="eventForm">
+      <section class="formSection">
+        <h2 class="title-semibold form-title">Informações do Evento</h2>
+        
+        <fieldset class="question">
+          <label for="eventTitle">Título do evento</label>
+          <input type="text" name="eventTitle">
+        </fieldset>
+        
+        <fieldset class="question">
+          <label for="eventLink">Link do evento</label>
+          <input type="text" name="eventTitle">
+        </fieldset>
+        
+        <fieldset class="question">
+          <label for="eventWhatsapp">Whatsapp para contato</label>
+          <input type="text" name="eventWhatsapp">
+        </fieldset>
+        
+        <fieldset class="question">
+          <label for="eventExtraInformations">Informações extras</label>
+          <textarea name="eventExtraInformations" rows="5"> </textarea>
+        </fieldset>
+        
+        <fieldset class="question">
+          <label for="eventCategory">Categoria</label>
+          <select name="eventCategory">
+            <option value="alinhamento">Alinhamento</option>
+            <option value="bugs">Correção de bugs</option>
+            <option value="daily">Daily</option>
+            <option value="confraternizacao">Confraternização</option>
+          </select>
+        </fieldset>
+      </section>
+
+      <section class="formSection">
+        <h2 class="title-semibold form-title">Privacidade</h2>
+        
+        <fieldset class="question">
+          <label for="eventHostEmail">E-mail do administrador</label>
+          <input type="email" name="eventHostEmail">
+        </fieldset>
+        
+        <fieldset class="question">
+          <label for="eventPassword">Senha de acesso para os participantes</label>
+          <input type="password" name="eventPassword">
+        </fieldset>
+        
+        <fieldset class="checkboxQuestion">
+          <input type="checkbox" name="eventPrivacy" value="private">
+          <label for="eventPrivacy">Evento privado</label>
+        </fieldset>
+      </section>
+
+      <section class="formSection">
+        <h2 class="title-semibold form-title">Dia e Hora</h2>
+        
+        <fieldset class="question">
+          <label for="eventDate">Data</label>
+          <input type="text" name="eventDate">
+        </fieldset>
+        
+        <fieldset class="question">
+          <label for="eventStart">Das</label>
+          <input type="text" name="eventHour">
+        </fieldset>
+        
+        <fieldset class="question">
+          <label for="eventEnd">Até</label>
+          <input type="text" name="eventEnd">
+        </fieldset>
+      </section>
+    </form>
+
+    <button type="submit">Salvar Evento</button>
+  </main>
+</body>
+</html>
